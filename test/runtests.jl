@@ -19,5 +19,5 @@ wordset1 = ["king", "man"]
 wordset2 = ["queen", "woman"]
 @time @test typeof(nsimilarity(wordset1, wordset2)) == Float32
 
-words = map(String, split("idiot world is increaseing"))
-getvector(words, rand(300))
+words = map(String, split("Julia is a developing language"))
+getvector(words, fill(0.25,300))
