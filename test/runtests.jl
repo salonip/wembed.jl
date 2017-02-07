@@ -15,6 +15,9 @@ model_path = "../res/word2vec_model.hdf5"
 wordsAsString = "breakfast sushi dinner lunch"
 @time @test typeof(odd1out(wordsAsString)) == String
 
-wordset1 = ["king"]
-wordset2 = ["man"]
+wordset1 = ["king", "man"]
+wordset2 = ["queen", "woman"]
 @time @test typeof(nsimilarity(wordset1, wordset2)) == Float32
+
+words = map(String, split("idiot world is increaseing"))
+getvector(words, rand(300))

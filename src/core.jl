@@ -95,12 +95,12 @@ end
 
 #=______________________________________________________________________________
 ______________________________________________________________________________=#
-function  getvector(words::Array, default_value)
+function  getvector(words, default_value)
   vectorset = Array(Float32, size(words, 1), 300)
   for i = 1:size(words,1)
     value = getvector(words[i], false)
     if value == false
-      return false
+      value = default_value
     end
     vectorset[i,:] = value
   end
