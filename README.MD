@@ -42,5 +42,10 @@ wordset1 = ["king", "man"]
 wordset2 = ["queen", "woman"]
 nsimilarity(wordset1, wordset2)
 
+# vectorize a sentence using vector of words in it where default value is 0.25 for unavailable words
+sentence = "Julia is a developing language"
+words = map(String, split(sentence))
+vector = getvector(words, fill(0.25,300))
+
 ```
 
