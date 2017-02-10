@@ -2,7 +2,7 @@
 This packedge in inspired by [Deeplearning4j 0.4] (https://github.com/deeplearning4j/deeplearning4j). All the output values are compared with the same.
 
 - Objective
-
+Presentation of results using neural word embeddings from google word2vec.
 Basic utils for googles word2vec model.
 
 - Prerequisites
